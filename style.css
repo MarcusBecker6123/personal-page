@@ -69,9 +69,11 @@ body {
 
 .grid {
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 95%;
     margin: 1rem;
+    top: 5rem;
 
 }
 
@@ -87,19 +89,20 @@ p {
 }
 
 .card {
-    
+    aspect-ratio: 1/1 !important;
     box-shadow: var(--shadow);
-    min-width: 10%;
+    width: 30%;
+    flex: 1;
     height: auto;
-    max-width: 300px;
+    
     background: #74365a55;
-    margin: 2rem;
+    margin: 1rem;
     border-radius: 20px;
-    padding: 1.2rem;
+    padding: 3rem;
     align-self: flex-end;
     opacity: 1;
     transform: translateY(0);
-    transition: opacity .6s ease, transform .6s ease;
+    transition: opacity .8s ease, transform .8s ease;
 
     &.animate-in {
         opacity: 1;
