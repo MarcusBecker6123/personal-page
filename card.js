@@ -11,7 +11,7 @@ export function cardAnimation() {
                 entry.target.classList.remove('animate-in');
             }
         });
-    }, { threshold: .2,
+    }, { threshold: .15,
         rootMargin: '0px 0px -150px 0px'
      });
     cards.forEach(card => cardObserver.observe(card));
