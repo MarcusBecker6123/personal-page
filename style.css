@@ -40,6 +40,10 @@ input[type="text"] {
     margin: 1rem;
     border-style: none;
     box-shadow: var(--shadow);
+    &:focus {
+        outline: none;
+        box-shadow:  0 0 0 1px #74365a66;
+    }
 }
 
 input[type="submit"] {
@@ -187,7 +191,9 @@ a{
     }
 
     .card, .card:nth-child(odd) {
-        align-self: center;;
+        align-self: center;
+        width: 90vw;
+        flex-shrink: 1;
     }
 
    
